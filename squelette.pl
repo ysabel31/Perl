@@ -2,11 +2,9 @@
 
 use strict;
 use warnings;
+require './DebugPrint.pm';
 use Data::Dumper;
-sub titleCase{
-  my ($str) = @_;
-  @tab = split(/\s+/,str);
-  print dumper @tab;
-}
-my $strRet = titleCase("I'm a little tea pot");
+
 print "Hello world!\n"
+
+1;

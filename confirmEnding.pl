@@ -2,18 +2,20 @@
 
 use strict;
 use warnings;
+use './DebugPrint.pm';
 use Data::Dumper;
+
 sub confirmEnding{
   my ($str,$target) = @_;
   my $pos = 0;
-  print "string => $str\ntarget => $target\n";
+  DebugPrint("string => $str\ntarget => $target\n");
   if (length($str) > length($target)){
     $pos = length($str) - length($target);
   }
   else{
     return 0;
   }
-  print "Position => $pos\n";
+  DebugPrint("Position => $pos\n");
   if (substr($str,$pos,length($target)) eq $target){
     return 1;
   }
@@ -22,4 +24,6 @@ sub confirmEnding{
   }
 }
 my $ret = confirmEnding("Bastian","on");
-print "valeur retour Bastian / n => $ret\n";
+DebugPrint("valeur retour Bastian / n => $ret\n");
+
+1;

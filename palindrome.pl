@@ -2,6 +2,7 @@
 
 use strict;
 use warnings;
+require './DebugPrint.pm';
 
 use Data::Dumper;
 
@@ -11,7 +12,7 @@ sub palindrome{
   $str = uc $str;
   my @tableau = split("",$str);
   @tableau=reverse(@tableau);
-  print Dumper(@tableau);
+  DebugPrint(Dumper(@tableau));
   my $recontruit = join("",@tableau);
   print "$recontruit \n";
   if ($recontruit eq $str){
@@ -23,7 +24,6 @@ sub palindrome{
   }  
 }
 
-print palindrome("Hello ysa");
-print "\n";
+DebugPrint(palindrome("Hello ysa"));
 
-
+1;

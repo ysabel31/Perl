@@ -1,6 +1,8 @@
 use Test::More;
+my $IN_TEST=1;
 
-require '../factorialize.pl';
+require './factorialize.pl';
+
 
 is(
    factorialize(5),

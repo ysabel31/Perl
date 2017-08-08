@@ -2,6 +2,7 @@
 
 use strict;
 use warnings;
+require './DebugPrint.pm';
 
 sub factorialize{
   my ($nombre) = @_;
@@ -13,6 +14,6 @@ sub factorialize{
   }	
 }
 
-diag(factorialize(5));
+DebugPrint(factorialize(5));
 
 1;
