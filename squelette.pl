@@ -5,6 +5,6 @@ use warnings;
 require './DebugPrint.pm';
 use Data::Dumper;
 
-print "Hello world!\n"
+print "Hello world!\n";
 
 1;

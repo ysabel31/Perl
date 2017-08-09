@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-use './DebugPrint.pm';
+require './DebugPrint.pm';
 use Data::Dumper;
 
 sub confirmEnding{
@@ -25,5 +25,4 @@ sub confirmEnding{
 }
 my $ret = confirmEnding("Bastian","on");
 DebugPrint("valeur retour Bastian / n => $ret\n");
-
 1;
